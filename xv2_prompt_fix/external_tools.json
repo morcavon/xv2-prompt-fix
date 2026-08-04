@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "tools": {
+    "cripaktools": {
+      "display_name": "CriPakTools",
+      "version": "0dbd2229f7c3b519c67d65e89055fd4e610d6dca",
+      "download_url": "https://raw.githubusercontent.com/esperknight/CriPakTools/0dbd2229f7c3b519c67d65e89055fd4e610d6dca/Build/CriPakTools.exe",
+      "download_size": 34304,
+      "download_sha256": "11c979a4ac574e8bfc9e12294972ca19436ddaacbbdf8dbf2e8a0e16f7693773",
+      "archive_member": null,
+      "executable_name": "CriPakTools.exe",
+      "executable_size": 34304,
+      "executable_sha256": "11c979a4ac574e8bfc9e12294972ca19436ddaacbbdf8dbf2e8a0e16f7693773",
+      "pe_machine": "x86",
+      "license": "NOASSERTION"
+    },
+    "depot_downloader": {
+      "display_name": "DepotDownloader",
+      "version": "3.4.0",
+      "download_url": "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.4.0/DepotDownloader-windows-x64.zip",
+      "download_size": 33474005,
+      "download_sha256": "41c9e9f0df54b3ad02e67a11726756e5c73283bd7c2e1b04acfa5ae4c2ed3767",
+      "archive_member": "DepotDownloader.exe",
+      "executable_name": "DepotDownloader.exe",
+      "executable_size": 78840739,
+      "executable_sha256": "6281279efce8f1e20db9532a58e42382f81afb9e3827a8b965ffcb43fbe4531f",
+      "pe_machine": "x64",
+      "license": "GPL-2.0"
+    }
+  }
+}

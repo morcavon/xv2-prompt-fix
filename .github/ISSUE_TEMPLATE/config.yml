@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: DepotDownloader upstream
+    url: https://github.com/SteamRE/DepotDownloader/issues
+    about: Also check the upstream project for DepotDownloader-specific problems.

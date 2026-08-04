@@ -1,0 +1,91 @@
+name: Bug report
+description: Report a reproducible bug.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach game files, backup CPK files, QR codes, Steam account data, or unredacted local paths.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: 0.4.0
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: 3.13.5
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Steam build ID
+      placeholder: 23988437
+  - type: input
+    id: language
+    attributes:
+      label: Game language / detected resource code
+      description: Enter the game language in use and the automatically detected code shown in the log.
+      placeholder: French / fr
+    validations:
+      required: true
+  - type: dropdown
+    id: ui-language
+    attributes:
+      label: GUI language
+      options:
+        - ko (Korean)
+        - en (English)
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Reference source method
+      options:
+        - Steam automatic download
+        - Local data1.cpk
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Actual and expected result
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted log
+      description: Check for personal information again, then paste only the necessary portion.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy and file checks
+      options:
+        - label: I did not attach a game CPK or backup file.
+          required: true
+        - label: I did not attach a Steam QR code, account name, or session data.
+          required: true
+        - label: I checked for my Windows user name and personal paths.
+          required: true
+        - label: This report does not concern an online or EAC-enabled environment.
+          required: true

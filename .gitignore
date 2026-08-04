@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+account.config
+
+# Logs and temporary files
+*.log
+*.part
+*.tmp
+*.temp
+
+# External binaries and archives
+*.exe
+*.dll
+*.zip
+*.7z
+*.rar
+
+# Game data
+*.cpk
+*.iggy
+*.iggytex
+*.iggyted
+
+# Runtime state and backups
+.xv2promptfix-state.json
+.xv2promptfix-source/
+.xv2promptfix-work-*/
+data1.cpk.xv2promptfix-*
+download-metadata.json
+
+# Local agent instructions
+/AGENTS.md
+/agents.md
