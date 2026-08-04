@@ -36,7 +36,8 @@ class StateTests(unittest.TestCase):
             self.assertTrue(actual.active)
             self.assertEqual(actual.backup_name, expected.backup_name)
             self.assertEqual(
-                resolve_backup_path(root, actual), root / "cpk" / expected.backup_name
+                resolve_backup_path(root, actual),
+                (root / "cpk" / expected.backup_name).resolve(strict=False),
             )
 
     def test_rejects_unsupported_schema(self) -> None:
